@@ -2,6 +2,27 @@
 //Date : 10/23/2022
 
 
+	// decode the inputs       
+    	// mark the type of process created and increment the variable
+ 
+
+    	// initialize the shared memory
+
+    	// random  time to start  a process
+
+    	// while processes less than 50
+        	// if queue is empty set time to process start time and start the process
+        	// else generate new process time if current time more than the process time, generate the process, else leave the time        
+        	// if process created mark the type of process created and increment the respective variable
+        	// check the blocked processes if the time is up for any of them put them in the queue.
+        	// schedule the process
+        	// increase the time by some random value for context switch
+        	// wait for the process to reply
+        	// set the process in applicable queue  -- blocked or running 
+        	// increment the time as per the process took
+        	// increment the stats variables for the avg wait execution and run times.
+        	// increase the time by 1.XX sec 
+
 //children globals
 int shmidChild;
 char *shmStrChild;

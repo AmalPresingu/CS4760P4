@@ -1,0 +1,22 @@
+Author  : Amal Presingu
+Date    : 10/28/2022
+CS4760  : Project 4
+
+HOW TO RUN
+----------
+1. Run the make command
+2. 
+
+COMMANDS 
+-------------------
+./master n -> slave xx                (Time will default to 100 seconds and allow you to enter xx between 1 and 20.           
+./master -t ss n -> slave xx          (Allows you to set time in seconds and enter xx between 1 and 20.
+
+
+Version Control
+---------------
+The .git subdirectory can be found by running ls -la in the directory.
+GitHub Repo: https://github.com/AmalPresingu/CS4760P4
+
+ISSUES/CHANGES
+--------------
