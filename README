@@ -5,18 +5,29 @@ CS4760  : Project 4
 HOW TO RUN
 ----------
 1. Run the make command
-2. 
+2. Run oss executable: oss [-h] [-s t] [-l f]
+3. Inspect logfiles for results
+4. Run make clean
 
 COMMANDS 
 -------------------
-./master n -> slave xx                (Time will default to 100 seconds and allow you to enter xx between 1 and 20.           
-./master -t ss n -> slave xx          (Allows you to set time in seconds and enter xx between 1 and 20.
+./oss -h            Prints usage commands
+./oss 				Runs with default time of 3 seconds
+./oss -s t			Allows user to set maximum seconds before termination
+./oss -l f 			Allows user to specify name for the log file
 
 
 Version Control
 ---------------
 The .git subdirectory can be found by running ls -la in the directory.
 GitHub Repo: https://github.com/AmalPresingu/CS4760P4
+
+AGING ALGORITHM
+----------------
+The aging algorithm can be found on line #358. Did this by calculating
+the average CPU time and average total time. Stored this as ratio and
+compared the average ratio to the current ratio. If the average ratio was
+greater than the current ratio, it shifts to the level 2 queue. 
 
 ISSUES/CHANGES
 --------------
