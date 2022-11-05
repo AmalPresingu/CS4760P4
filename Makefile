@@ -20,3 +20,4 @@ oss: $(PROCESS2) $(CONFIG)
 
 clean: 
 	@rm -f *.o oss child logfile.*
+	rm *.txt

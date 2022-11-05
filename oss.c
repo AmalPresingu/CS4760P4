@@ -335,7 +335,7 @@ void logMaster(){
     lineCountLogfile+=2;
 
     // printf("%s\b\b\b%d::%ld : %s",asctime(tm),lc_ptr->sec,lc_ptr->nsec,logEntry);
-    printf("%d::%ld : %s",lc_ptr->sec,lc_ptr->nsec,logEntry);
+    // printf("%d::%ld : %s",lc_ptr->sec,lc_ptr->nsec,logEntry);
 
     if(lineCountLogfile == MAX_LINE_IN_LOG_FILE){
         logFileNumber ++;
@@ -371,7 +371,7 @@ void printStat(struct stat s)
     printf("Avg Wait Time : %lf\n",s.avgwait_t);
     printf("Avg CPU Time : %lf\n",s.avgcpu_t);
     printf("Avg Time in Block Queue: %lf\n",s.avgBlockQueue_t);
-    printf("Avg TOTAL Time in the System: %lf\n",s.avgtotal_t);
+    printf("Avg Total Time in the System: %lf\n",s.avgtotal_t);
 }
 
 int main(int argc, char ** argv)

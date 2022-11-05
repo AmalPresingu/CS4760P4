@@ -6,7 +6,7 @@ HOW TO RUN
 ----------
 1. Run the make command
 2. Run oss executable: oss [-h] [-s t] [-l f]
-3. Inspect logfiles for results
+3. Inspect log files & screen for results
 4. Run make clean
 
 COMMANDS 
@@ -24,10 +24,16 @@ GitHub Repo: https://github.com/AmalPresingu/CS4760P4
 
 AGING ALGORITHM
 ----------------
-The aging algorithm can be found on line #358. Did this by calculating
+The aging algorithm can be found on line #354. Did this by calculating
 the average CPU time and average total time. Stored this as ratio and
 compared the average ratio to the current ratio. If the average ratio was
 greater than the current ratio, it shifts to the level 2 queue. 
 
 ISSUES/CHANGES
 --------------
+- I printed the STATS to the screen and stored everything else regarding the OSS in the log file.
+
+- I had to set the max processes to 20 instead of 50, because it killed my connection to the
+  server everytime it was over 25. I think this may have something to do with how I handled
+  the queues, but still not entirely sure. 20 max processes should run smooth everytime. 
+  However, 50 max processes runs smoothly on my local terminal. 
